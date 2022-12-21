@@ -1,15 +1,3 @@
-// const contenitore = document.querySelector(".container");
-// let d = document.createElement(`div`);
-// d.append(i);
-// contenitore.append(d);
-
-// for (let i = 1; i < 101; i++) {
-//   const contenitore = document.querySelector(".container");
-//   let d = document.createElement(`div`);
-//   console.log(d);
-//   d.append(i);
-//   contenitore.append(d);
-
 //   if (i % 3 === 0 && i % 5 === 0) {
 //     console.log(i + "FizzBuzz");
 //   } else if (i % 3 === 0) {
@@ -19,41 +7,27 @@
 //   }
 // }
 
-// for (let i = 1; i < 101; i++) {
-//   if (i % 3 === 0 && i % 5 === 0) {
-//     i = "FizzBuzz";
-//   } else if (i % 3 === 0) {
-//     i = "Fizz";
-//   } else if (i % 5 === 0) {
-//     i = "Buzz";
-//   }
-//   const contenitore = document.querySelector(".container");
-//   let d = document.createElement(`div`);
-//   d.append(i);
-//   contenitore.append(d);
-// }
-
 for (let i = 1; i < 101; i++) {
-  if (i % 3 === 0) {
-    i = "Fizz";
-  } else {
-    i = i;
-  }
-
-  if (i % 5 === 0) {
-    i = "Buzz";
-  } else {
-    i = i;
-  }
-
+  console.log(i);
   if (i % 3 === 0 && i % 5 === 0) {
-    i = "FizzBuzz";
+    const main = document.querySelector("main.flex");
+    const div = document.createElement("div");
+    div.append("FizzBuzz");
+    main.append(div);
+  } else if (i % 3 === 0) {
+    const main = document.querySelector("main.flex");
+    const div = document.createElement("div");
+    div.append("fizz");
+    main.append(div);
+  } else if (i % 5 === 0) {
+    const main = document.querySelector("main.flex");
+    const div = document.createElement("div");
+    div.append("buzz");
+    main.append(div);
   } else {
-    i = i;
+    const main = document.querySelector("main.flex");
+    const div = document.createElement("div");
+    div.append(i);
+    main.append(div);
   }
-
-  const contenitore = document.querySelector(".container");
-  let d = document.createElement(`div`);
-  d.append(i);
-  contenitore.append(d);
 }
