@@ -20,15 +20,17 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda ch
 2. se il numero è divisibile per 3 al suo interno inserisci la stringa Fizz e stampa in console;
 3. se il numero è divisibile per 5 al suo interno inserisci la stringa Buzz e stampa in console;
 4. se il numero è divisibile per 3 e divisibile per 5 al suo interno inserisci la stringa FizzBuzz e stampa in console;
+5. se non è niente di tutto questo, stampa il numero;
 */
 
 for (let i = 1; i < 101; i++) {
-  console.log(i);
   if (i % 3 === 0 && i % 5 === 0) {
     console.log(i + "FizzBuzz");
   } else if (i % 3 === 0) {
     console.log(i + "Fizz");
   } else if (i % 5 === 0) {
     console.log(i + "Buzz");
+  } else {
+    console.log(i);
   }
 }
